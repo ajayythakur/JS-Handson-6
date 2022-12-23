@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Problem Solving Handson</title>
+</head>
+<body>
+    <h1>JS HANDSON</h1>
+    <h2>Problem Solving</h2>
+    <hr>
+
+    <p class="ques"><span class="red">Qn 1.Find the Smaller Angle <br>PrepBuddy has an analog clock which consists of two hands one for hour and another for minute. She wants to calculate the shorter angle formed between hour and minute hand at any given time.</span>
+        <p class="ans"><span class="green">Ans - </span>
+        <pre> PROBLEM IS YET TO DISCUSS WITH MENTOR
+        </pre></p>
+
+        <p class="ques"><span class="red">Qn 2.Write a program which takes an year N as input from the user and find out whether the given year is a Leap Year or not.</span>
+            <p class="ans"><span class="green">Ans - </span>
+            <pre>var Check_Leap = (year) => 
+                {
+                 
+                        if (year % 400 == 0)
+                            return "Leap Year";
+                            
+                                if (year % 100 == 0)
+                            return "Non Leap Year";
+                            
+                                    if (year % 4 == 0)
+                            return  "Leap Year";
+                        return "Non Leap Year";
+                };
+            </pre></p>
+
+
+            <p class="ques"><span class="red">Qn 3.Perfect Number Check. <br>Have you heard of Perfect numbers? If not let me tell you what is it, Perfect Numbers are integers that are equal to the sum of all its divisors except that number itself. Now, You are given an integer N, write a program to check whether the given number is a Perfect Number or not.</span>
+            <p class="ans"><span class="green">Ans - </span>
+            <pre>var Perfect_Check = (N) => 
+                {
+                  let count=0;
+                 for(let i=1;i< N;i++){
+                   if(i/N===0){
+                     count+=i;
+                   }
+                 }
+                 if(count===N || N==1){
+                   return "YES"
+                 }
+                 else{
+                   return "NO";
+                 }
+                        
+                };
+            </pre></p>
+
+
+            <p class="ques"><span class="red">Qn 4. Reverse a Number. <br> Write a program which takes a numebr N  as input from the user and You need to reverse the number.</span>
+            <p class="ans"><span class="green">Ans - </span>
+            <pre>var Reverse_Number = (N) => 
+                {
+                  let rev =
+                    N.toString().split('').reverse().join('');
+                    let revNum=parseInt(rev) * Math.sign(N);
+                    return revNum;
+                };
+            </pre></p>
+
+
+            <p class="ques"><span class="red">Qn 5. Substring Check. <br>You are given two strings S1 and S2, you need to check whether the string S1 is a substring of string S2 or not.</span>
+            <p class="ans"><span class="green">Ans - </span>
+            <pre>var Substring_Check = (S1, S2) => 
+                {
+                  let substr=S1.includes(S2);
+                  if(substr===true){
+                    return "YES";
+                  }
+                  else{
+                    return "NO";
+                  }
+                };
+            </pre></p>
+</body>
+</html>
